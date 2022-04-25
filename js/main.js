@@ -2,8 +2,16 @@ const tab1=['corner1','corner2','corner3','corner4','corner5','corner6','corner7
 
 let formationDom="";
 let formationExt="";
-let cornertirage="0";
+let cornertirage=0;
+let coupftirage=0;
 
+
+const tabAction=['coupFBD','coupFBD2', 'coupFBD3','coupFHD.css','coupFHD2.css','coupFHD3.css','coupFHG.css','acoupFHG2.css','coupFHG3.css','coupFBG.css','coupFBG2.css','acoupFBG3.css'];
+
+var i=0;
+var a=0;
+var envoi="";
+var compteur=0;
 
 function swap(cssFile) {
     var link = document.getElementById("change-style")
@@ -251,28 +259,45 @@ function cornerBDsenar(){
     }
 }
 
+function coupFBDsenar(){
+    let test="";
+   
+    test=tabAction[coupftirage];
+    console.log(JSON.parse(JSON.stringify(test)));
+    
+    switch (test) {
+    
+    case 'coupFBD':
+    swap('css/coupFBD.css');
+    coupftirage=coupftirage+1;
+    break;
+                                  
+    case 'coupFBD2':
+    swap('css/coupFBD2.css');
+    coupftirage=coupftirage+1;
+    break;
+                              
+    case 'coupFBD3':
+    swap('css/coupFBD3.css');
+    coupftirage=0;
+    break;                     
+                                  
+    }
+}
 
 
-/*const tab1:['action1','action2', 'action3','action4','action5','action6','action7','action8','action9','action10','action11','action12']
-appel1(0,2);
-appel2(3,5);
-appel3(6,8);
-appel4(9,11);
-
-var i=0;
-var a=0;
-var envoi="";
-var compteur=0;
-
+/*
 function senarDetermine(min,max){
 i=min+compteur;
 a=max;
-
+console.log(i);
+console.log(a);
 while(compteur<(a-1)){
-    envoi=tab[I];
+    envoi=tabAction[i];
+    console.log(envoi);
+    swap(envoi);
     i=i+1;
     compteur=compteur+1
-}
 }
 }
 
