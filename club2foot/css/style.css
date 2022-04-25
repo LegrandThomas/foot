@@ -1,0 +1,170 @@
+body {
+    font-family: "Trebuchet MS";
+	background-image: url("../images/vue-dessus-texture-arriere-plan-herbe-verte.jpg") ;
+	background-repeat: no-repeat;  
+	background-attachment: fixed;  
+	background-size: 100%  100%;
+    color: black;
+    background-color: #1b8f8f;
+}
+
+
+nav{
+    width: 120%;
+ margin-left: -10px;
+    margin-top: -20px;
+   background-color: cadetblue;
+   background: linear-gradient(to right, rgb(237, 241, 241) 0%, rgb(1, 65, 69) 100%);
+    position: sticky;
+    top: 0px;
+
+    
+}
+
+nav ul{
+    list-style-type: none;
+    z-index: 3000;
+}
+
+nav ul li{
+    float: left;
+    width: 16%;
+    text-align: center;
+    position: relative;
+    z-index: 3000;
+}
+
+nav ul::after{
+    content: "";
+    display: table;
+    clear: both;
+    z-index: 3000;
+}
+
+nav a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    border-bottom: 2px solid transparent;
+    padding: 1px 0px;
+    z-index: 3000;
+}
+
+nav a:hover{
+    color: orange;
+    border-bottom: 2px solid gold;
+    z-index: 3000;
+}
+
+.sous{
+    display: none;
+    box-shadow: 0px 1px 2px #CCC;
+    background-color: rgb(211, 204, 204);
+    position: absolute;
+    width: 80%;
+    margin-left: 20%;
+    z-index: 3000;
+}
+nav > ul li:hover .sous{
+    display: block;
+    z-index: 3000;
+}
+.sous li{
+    float: none;
+    width: 100%;
+    text-align: left;
+    z-index: 3000;
+}
+.sous a{
+    padding: 5px;
+    border-bottom: none;
+    z-index: 3000;
+}
+.sous a:hover{
+    border-bottom: none;
+    background-color: RGBa(200,200,200,0.1);
+    z-index: 3000;
+}
+.deroulant > a::after{
+    content:" ▼";
+    font-size: 12px;
+    z-index: 3000;
+}
+
+#tagcoach{ 
+    color: #ae5914;
+    margin-top: 10px;
+
+}
+
+#tagequipeDOM{
+margin-top: 0em;
+color: rgb(71, 223, 223);
+
+    }
+    
+#tagequipeEXT{
+
+    color: rgb(221, 116, 221);
+    
+        }
+#actions{
+
+    color:white;
+}
+
+
+
+@media screen and (max-width: 480px)
+{
+    body {
+        font-family: "Trebuchet MS";
+        background-image: url("../images/vue-dessus-texture-arriere-plan-herbe-verte.jpg") ;
+        background-repeat: no-repeat;  
+        background-attachment: fixed;  
+        background-size: 100%  100%;
+        color: black;
+        background-color: #1b8f8f;
+        
+    }
+    
+  /*formation terrain  */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  
+}
+
+.tourne{
+
+    transform: translateX(9rem) translateY(20em) rotate(90deg);
+      
+}
+
+
+nav{
+    width: 100%;
+   background-color: cadetblue;
+   background: linear-gradient(to right, rgb(237, 241, 241) 0%, rgb(1, 65, 69) 100%);
+    position: sticky;
+    margin: 0%;
+    transform: translateX(2rem) translateY(-0em);
+   
+    
+}
+
+#containerTerrain {
+    display: flex;
+    height: 90vw;
+    width: 90vh;
+    transform: rotate(90deg);
+    transform: translateX(2rem) translateY(-2em);
+}
+
+.elementMobile{
+    position: absolute;
+   
+  }
+
+}

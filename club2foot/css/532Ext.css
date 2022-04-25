@@ -1,0 +1,675 @@
+
+
+  /*formation terrain*/
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+  
+  #containerTerrain {
+      display: flex;
+      height: 90vh;
+      width: 90vw;
+    
+  }
+  
+  .elementMobile{
+      position: absolute;
+    }
+  
+  
+  
+    #ligneBUTgau {
+      width: 8em;
+      height: 39em;
+      clip-path: inset(100px 50px);
+      background-color:white;
+      display: inline-block;
+      margin:0%;
+      transform: translateX(5rem) translateY(-3.9em);
+      transition: transform 1s cubic-bezier(0.45, -1.12, 0.35, 1.78);
+      z-index: 100;
+    }
+  
+    #ligneBUTdroi {
+      width: 8em;
+      height: 39em;
+      clip-path: inset(100px 50px);
+      background-color: white;
+      display: inline-block;
+      margin: 0%;
+      transform: translateX(61.4rem) translateY(-3.9em);
+      transition: transform 1s cubic-bezier(0.45, -1.12, 0.35, 1.78);
+      z-index: -100;
+    }
+  
+    
+    #ligneTouchHaut{
+      width: 8em;
+      height: 59.4em;
+      clip-path: inset(10px 50px);
+      background-color: white;
+      display: inline-block;
+      transform: translateX(33.2rem) translateY(-26.9em) rotate(90deg);
+      margin: 0%;
+      transition: transform 1s cubic-bezier(0.45, -1.12, 0.35, 1.78);
+      z-index: -100;
+      
+  }
+  
+   
+    #ligneTouchBas{
+      width: 8em;
+      height: 59.4em;
+      clip-path: inset(10px 50px);
+      background-color: white;
+      display: inline-block;
+      margin: 0%;
+      transform: translateX(33.2rem) translateY(-0.9em) rotate(90deg);
+      transition: transform 1s cubic-bezier(0.45, -1.12, 0.35, 1.78);
+      
+  }
+  
+  #ligneHautBut{
+      width: 7em;
+      height: 7.4em;
+      clip-path: inset(10px 50px);
+      background-color: white;
+      display: inline-block;
+      margin: 0%;
+      transform: translateX(8.2rem) translateY(7.1em) rotate(90deg);
+      transition: transform 1s cubic-bezier(0.45, -1.12, 0.35, 1.78);
+  }
+  
+  
+  #ligneHautBut2{
+      width: 7em;
+      height: 7.4em;
+      clip-path: inset(10px 50px);
+      background-color: white;
+      display: inline-block;
+      margin: 0%;
+      transform: translateX(59.2rem) translateY(7.1em) rotate(90deg);
+      transition: transform 1s cubic-bezier(0.45, -1.12, 0.35, 1.78);
+  }
+  
+  #ligneBasBut{
+      width: 7em;
+      height: 7.4em;
+      clip-path: inset(10px 50px);
+      background-color: white;
+      display: inline-block;
+      margin: 0%;
+      transform: translateX(8.2rem) translateY(16.1em) rotate(90deg);
+      transition: transform 1s cubic-bezier(0.45, -1.12, 0.35, 1.78);
+  }
+  
+  #ligneBasBut2{
+      width: 7em;
+      height: 7.4em;
+      clip-path: inset(10px 50px);
+      background-color: white;
+      display: inline-block;
+      margin: 0%;
+      transform: translateX(59.2rem) translateY(16.1em) rotate(90deg);
+      transition: transform 1s cubic-bezier(0.45, -1.12, 0.35, 1.78);
+  }
+  
+  
+  #ligne6m{
+      width: 7em;
+      height: 11em;
+      clip-path: inset(10px 50px);
+      background-color: white;
+      display: inline-block;
+      margin: 0%;
+      transform: translateX(11rem) translateY(9.9em);
+      transition: transform 1s cubic-bezier(0.45, -1.12, 0.35, 1.78);
+  }
+  
+  
+  #ligne6m2{
+          width: 7em;
+          height: 11em;
+          clip-path: inset(10px 50px);
+          background-color: white;
+          display: inline-block;
+          margin: 0%;
+          transform: translateX(56rem) translateY(9.8em);
+          transition: transform 1s cubic-bezier(0.45, -1.12, 0.35, 1.78);
+           }
+  
+  
+  #RondCentral {
+      width:200px;
+      height:200px;
+      border: 7px;
+      border-style: solid;
+      border-color: white;
+      background-color: #11ffee00; 
+      transform: translateX(31rem) translateY(8.8em);
+      transition: transform 1s cubic-bezier(0.45, -1.12, 0.35, 1.78);
+      border-radius:50%;
+                  }
+  
+                  
+  #medianetop{
+      width: 7em;
+      height: 7em;
+      clip-path: inset(10px 50px);
+      background-color: white;
+      display: inline-block;
+      margin: 0%;
+      transform: translateX(34rem) translateY(2.9em);
+      transition: transform 1s cubic-bezier(0.45, -1.12, 0.35, 1.78);
+  }
+  
+                 
+  #medianebot{
+     
+      width: 7em;
+      height: 9em;
+      clip-path: inset(10px 50px);
+      background-color: white;
+      display: inline-block;
+      margin: 0%;
+      transform: translateX(34rem) translateY(20.5em);
+      transition: transform 1s cubic-bezier(0.45, -1.12, 0.35, 1.78);
+  }
+  
+  #corner1{
+  
+      width:50px;
+      height:50px;
+      border: 7px;
+      border-style: solid;
+      border-color: white;
+      background-color: #11ffee00; 
+      border-bottom-right-radius: 50%;
+      transform: translateX(9rem) translateY(2.8em);
+      transition: transform 1s cubic-bezier(0.45, -1.12, 0.35, 1.78);
+  
+  }
+  
+  
+  #corner2{
+  
+      width:50px;
+      height:50px;
+      border: 7px;
+      border-style: solid;
+      border-color: white;
+      background-color: #11ffee00; 
+      border-top-right-radius: 50%;
+      transform: translateX(9rem) translateY(25.8em);
+      transition: transform 1s cubic-bezier(0.45, -1.12, 0.35, 1.78);
+  
+  }
+  
+  
+  #corner3{
+  
+      width:50px;
+      height:50px;
+      border: 7px;
+      border-style: solid;
+      border-color: white;
+      background-color: #11ffee00; 
+      border-top-left-radius: 50%;
+      transform: translateX(62rem) translateY(25.8em);
+      transition: transform 1s cubic-bezier(0.45, -1.12, 0.35, 1.78);
+  
+  }
+  
+  
+  #corner4{
+  
+      width:50px;
+      height:50px;
+      border: 7px;
+      border-style: solid;
+      border-color: white;
+      background-color: #11ffee00; 
+      border-bottom-left-radius: 50%;
+      transform: translateX(62rem) translateY(2.8em);
+      transition: transform 1s cubic-bezier(0.45, -1.12, 0.35, 1.78);
+  
+  }
+  
+  
+  #point1 {
+      width:5px;
+      height:5px;
+      border: 7px;
+      border-style: solid;
+      border-color: white;
+      background-color: white; 
+      transform: translateX(12rem) translateY(14.8em);
+      transition: transform 1s cubic-bezier(0.45, -1.12, 0.35, 1.78);
+      border-radius:50%;
+                  }
+  
+                  
+  #point2 {
+      width:5px;
+      height:5px;
+      border: 7px;
+      border-style: solid;
+      border-color: white;
+      background-color: white; 
+      transform: translateX(37rem) translateY(14.8em);
+      transition: transform 1s cubic-bezier(0.45, -1.12, 0.35, 1.78);
+      border-radius:50%;
+                  }
+  
+                  
+  #point3 {
+      width:5px;
+      height:5px;
+      border: 7px;
+      border-style: solid;
+      border-color: white;
+      background-color: white; 
+      transform: translateX(61rem) translateY(14.8em);
+      transition: transform 1s cubic-bezier(0.45, -1.12, 0.35, 1.78);
+      border-radius:50%;
+                  }
+  
+    /*joueurs DOM*/
+  
+    #joueur1Dom{
+      width: 50px;
+      height: 50px;
+      background-image: url(../images/gardien.svg);
+      transform: translateX(8rem) translateY(13.8em) rotate(360deg);
+      transition: transform 1s cubic-bezier(0.45, -1.12, 0.35, 1.78);
+      border-radius: 50%;
+      z-index: 50000;
+    }
+    
+    #joueur2Dom{
+      width: 50px;
+      height: 50px;
+      background-image: url(../images/maillotDOM.svg);
+      transform: translateX(16rem) translateY(4.8em) rotate(360deg);
+      transition: transform 1s cubic-bezier(0.45, -1.12, 0.35, 1.78);
+      border-radius: 50%;
+      z-index: 50000;
+    }
+    
+    #joueur3Dom{
+      width: 50px;
+      height: 50px;
+      background-image: url(../images/maillotDOM.svg);
+      transform: translateX(13rem) translateY(10.8em)  rotate(360deg);
+      transition: transform 1s cubic-bezier(0.45, -1.12, 0.35, 1.78);
+      border-radius: 50%;
+    }
+  
+    
+    #joueur4Dom{
+      width: 50px;
+      height: 50px;
+      background-image: url(../images/maillotDOM.svg);
+      transform: translateX(15.8rem) translateY(22.8em) rotate(360deg);
+      transition: transform 1s cubic-bezier(0.45, -1.12, 0.35, 1.78);
+      border-radius: 50%;
+    }
+  
+    
+    #joueur5Dom{
+      width: 50px;
+      height: 50px;
+      background-image: url(../images/maillotDOM.svg);
+      transform: translateX(13rem) translateY(16.8em) rotate(360deg);
+      transition: transform 1s cubic-bezier(0.45, -1.12, 0.35, 1.78);
+      border-radius: 50%;
+    }
+  
+    
+    #joueur6Dom{
+      width: 50px;
+      height: 50px;
+      background-image: url(../images/maillotDOM.svg);
+      transform: translateX(27rem) translateY(20.8em) rotate(360deg);
+      transition: transform 1s cubic-bezier(0.45, -1.12, 0.35, 1.78);
+      border-radius: 50%;
+    }
+  
+    
+    #joueur7Dom{
+      width: 50px;
+      height: 50px;
+      background-image: url(../images/maillotDOM.svg);
+      transform: translateX(27rem) translateY(6.8em) rotate(360deg);
+      transition: transform 1s cubic-bezier(0.45, -1.12, 0.35, 1.78);
+      border-radius: 50%;
+    }
+  
+    
+    #joueur8Dom{
+      width: 50px;
+      height: 50px;
+      background-image: url(../images/maillotDOM.svg);
+      transform: translateX(21rem) translateY(10.8em) rotate(360deg);
+      transition: transform 1s cubic-bezier(0.45, -1.12, 0.35, 1.78);
+      border-radius: 50%;
+    }
+  
+     
+    #joueur9Dom{
+      width: 50px;
+      height: 50px;
+      background-image: url(../images/maillotDOM.svg);
+      transform: translateX(33rem) translateY(9.3em) rotate(360deg);
+      transition: transform 1s cubic-bezier(0.45, -1.12, 0.35, 1.78);
+      border-radius: 50%;
+    }
+  
+    
+    #joueur10Dom{
+      width: 50px;
+      height: 50px;
+      background-image: url(../images/maillotDOM.svg);
+      transform: translateX(21rem) translateY(17em) rotate(360deg);
+      transition: transform 1s cubic-bezier(0.45, -1.12, 0.35, 1.78);
+      border-radius: 50%;
+    }
+  
+    
+    #joueur11Dom{
+      width: 50px;
+      height: 50px;
+      background-image: url(../images/maillotDOM.svg);
+      transform: translateX(33rem) translateY(15.3em) rotate(360deg);
+      transition: transform 1s cubic-bezier(0.45, -1.12, 0.35, 1.78);
+      border-radius: 50%;
+    }
+  
+    
+    /*joueurs Ext*/
+  
+    #joueur1Ext{
+        width: 50px;
+        height: 50px;
+        background-image: url(../images/gardien.svg);
+        transform: translateX(63rem) translateY(13.8em) rotate(360deg);
+        transition: transform 1s cubic-bezier(0.45, -1.12, 0.35, 1.78);
+        border-radius: 50%;
+      }
+      
+      #joueur2Ext{
+        width: 50px;
+        height: 50px;
+        background-image: url(../images/maillotEXT.svg);
+        transform: translateX(41rem) translateY(9.8em) rotate(360deg);
+        transition: transform 1s cubic-bezier(0.45, -1.12, 0.35, 1.78);
+        border-radius: 50%;
+      }
+      
+      #joueur3Ext{
+        width: 50px;
+        height: 50px;
+        background-image: url(../images/maillotEXT.svg);
+        transform: translateX(41rem) translateY(15.8em) rotate(360deg);
+        transition: transform 1s cubic-bezier(0.45, -1.12, 0.35, 1.78);
+        border-radius: 50%;
+      }
+    
+      
+      #joueur4Ext{
+        width: 50px;
+        height: 50px;
+        background-image: url(../images/maillotEXT.svg);
+        transform: translateX(46rem) translateY(5.8em) rotate(360deg);
+        transition: transform 1s cubic-bezier(0.45, -1.12, 0.35, 1.78);
+        border-radius: 50%;
+      }
+    
+      
+      #joueur5Ext{
+        width: 50px;
+        height: 50px;
+        background-image: url(../images/maillotEXT.svg);
+        transform: translateX(46rem) translateY(22.8em) rotate(360deg);
+        transition: transform 1s cubic-bezier(0.45, -1.12, 0.35, 1.78);
+        border-radius: 50%;
+      }
+    
+      
+      #joueur6Ext{
+        width: 50px;
+        height: 50px;
+        background-image: url(../images/maillotEXT.svg);
+        transform: translateX(46rem) translateY(13.8em) rotate(360deg);
+        transition: transform 1s cubic-bezier(0.45, -1.12, 0.35, 1.78);
+        border-radius: 50%;
+      }
+    
+      
+      #joueur7Ext{
+        width: 50px;
+        height: 50px;
+        background-image: url(../images/maillotEXT.svg);
+        transform: translateX(53rem) translateY(13.3em) rotate(360deg);
+        transition: transform 1s cubic-bezier(0.45, -1.12, 0.35, 1.78);
+        border-radius: 50%;
+      }
+    
+      
+      #joueur8Ext{
+        width: 50px;
+        height: 50px;
+        background-image: url(../images/maillotEXT.svg);
+        transform: translateX(53rem) translateY(22.3em) rotate(360deg);
+        transition: transform 1s cubic-bezier(0.45, -1.12, 0.35, 1.78);
+        border-radius: 50%;
+      }
+    
+       
+      #joueur9Ext{
+        width: 50px;
+        height: 50px;
+        background-image: url(../images/maillotEXT.svg);
+        transform: translateX(53rem) translateY(5.3em) rotate(360deg);
+        transition: transform 1s cubic-bezier(0.45, -1.12, 0.35, 1.78);
+        border-radius: 50%;
+      }
+    
+      
+      #joueur10Ext{
+        width: 50px;
+        height: 50px;
+        background-image: url(../images/maillotEXT.svg);
+        transform: translateX(58rem) translateY(16.3em) rotate(360deg);
+        transition: transform 1s cubic-bezier(0.45, -1.12, 0.35, 1.78);
+        border-radius: 50%;
+      }
+    
+      
+      #joueur11Ext{
+        width: 50px;
+        height: 50px;
+        background-image: url(../images/maillotEXT.svg);
+        transform: translateX(58rem) translateY(10.3em) rotate(360deg);
+        transition: transform 1s cubic-bezier(0.45, -1.12, 0.35, 1.78);
+        border-radius: 50%;
+      }
+    
+
+     /*joueurs DOM*/
+  
+    #joueur1Dom{
+      width: 50px;
+      height: 50px;
+      background-image: url(../images/gardien.svg);
+      transform: translateX(8rem) translateY(13.8em) rotate(360deg);
+      transition: transform 1s cubic-bezier(0.45, -1.12, 0.35, 1.78);
+      border-radius: 50%;
+      z-index: 50000;
+    }
+    
+    #joueur2Dom{
+      width: 50px;
+      height: 50px;
+      background-image: url(../images/maillotDOM.svg);
+      transform: translateX(16rem) translateY(4.8em) rotate(360deg);
+      transition: transform 1s cubic-bezier(0.45, -1.12, 0.35, 1.78);
+      border-radius: 50%;
+      z-index: 50000;
+    }
+    
+    #joueur3Dom{
+      width: 50px;
+      height: 50px;
+      background-image: url(../images/maillotDOM.svg);
+      transform: translateX(13rem) translateY(10.8em)  rotate(360deg);
+      transition: transform 1s cubic-bezier(0.45, -1.12, 0.35, 1.78);
+      border-radius: 50%;
+    }
+  
+    
+    #joueur4Dom{
+      width: 50px;
+      height: 50px;
+      background-image: url(../images/maillotDOM.svg);
+      transform: translateX(15.8rem) translateY(22.8em) rotate(360deg);
+      transition: transform 1s cubic-bezier(0.45, -1.12, 0.35, 1.78);
+      border-radius: 50%;
+    }
+  
+    
+    #joueur5Dom{
+      width: 50px;
+      height: 50px;
+      background-image: url(../images/maillotDOM.svg);
+      transform: translateX(13rem) translateY(16.8em) rotate(360deg);
+      transition: transform 1s cubic-bezier(0.45, -1.12, 0.35, 1.78);
+      border-radius: 50%;
+    }
+  
+    
+    #joueur6Dom{
+      width: 50px;
+      height: 50px;
+      background-image: url(../images/maillotDOM.svg);
+      transform: translateX(24rem) translateY(21.8em) rotate(360deg);
+      transition: transform 1s cubic-bezier(0.45, -1.12, 0.35, 1.78);
+      border-radius: 50%;
+    }
+  
+    
+    #joueur7Dom{
+      width: 50px;
+      height: 50px;
+      background-image: url(../images/maillotDOM.svg);
+      transform: translateX(24rem) translateY(6.8em) rotate(360deg);
+      transition: transform 1s cubic-bezier(0.45, -1.12, 0.35, 1.78);
+      border-radius: 50%;
+    }
+  
+    
+    #joueur8Dom{
+      width: 50px;
+      height: 50px;
+      background-image: url(../images/maillotDOM.svg);
+      transform: translateX(17rem) translateY(13.8em) rotate(360deg);
+      transition: transform 1s cubic-bezier(0.45, -1.12, 0.35, 1.78);
+      border-radius: 50%;
+    }
+  
+     
+    #joueur9Dom{
+      width: 50px;
+      height: 50px;
+      background-image: url(../images/maillotDOM.svg);
+      transform: translateX(31rem) translateY(10.3em) rotate(360deg);
+      transition: transform 1s cubic-bezier(0.45, -1.12, 0.35, 1.78);
+      border-radius: 50%;
+    }
+  
+    
+    #joueur10Dom{
+      width: 50px;
+      height: 50px;
+      background-image: url(../images/maillotDOM.svg);
+      transform: translateX(24rem) translateY(14em) rotate(360deg);
+      transition: transform 1s cubic-bezier(0.45, -1.12, 0.35, 1.78);
+      border-radius: 50%;
+    }
+  
+    
+    #joueur11Dom{
+      width: 50px;
+      height: 50px;
+      background-image: url(../images/maillotDOM.svg);
+      transform: translateX(31rem) translateY(15.3em) rotate(360deg);
+      transition: transform 1s cubic-bezier(0.45, -1.12, 0.35, 1.78);
+      border-radius: 50%;
+    }
+  
+    
+    
+   
+     /*arbitres*/
+     #arbitreTouch1{
+        width: 50px;
+        height: 50px;
+        background-image: url(../images/arbitres.svg);
+        transform: translateX(34rem) translateY(-1em) rotate(360deg);
+        transition: transform 1s cubic-bezier(0.45, -1.12, 0.35, 1.78);
+        border-radius: 50%;
+        z-index: 100;
+      }
+      
+    #arbitreTouch2{
+        width: 50px;
+        height: 50px;
+        background-image: url(../images/arbitres.svg);
+        transform: translateX(38rem) translateY(29.4em) rotate(360deg);
+        transition: transform 1s cubic-bezier(0.45, -1.12, 0.35, 1.78);
+        border-radius: 50%;
+      }
+    
+      
+      #arbitreCentre{
+        width: 50px;
+        height: 50px;
+        background-image: url(../images/arbitres.svg);
+        transform: translateX(36rem) translateY(12em) rotate(360deg);
+        transition: transform 1s cubic-bezier(0.45, -1.12, 0.35, 1.78);
+        border-radius: 50%;
+      }
+  
+      
+  #balonfixe{
+    width: 50px;
+    height: 50px;
+    background-image: url(../images/BallonFixe.svg);
+    transform: translateX(36rem) translateY(14em) rotate(360deg);
+    transition: transform 1s cubic-bezier(0.45, -1.12, 0.35, 1.78);
+    border-radius: 50%;
+
+  }
+    
+   
+  .infobulle {
+      
+    cursor: help;
+   
+  }
+  
+  /* on génère un élément :after lors du survol et du focus :*/
+  
+  .infobulle:hover::after,
+  .infobulle:focus::after {
+    content: attr(aria-label);  /* on affiche aria-label */
+    position: absolute;
+    background-color: rgb(12, 66, 151);
+    bottom: 100%;
+    transform: translateX(-50%); /* on centre horizontalement  */
+    z-index: 100000; /* pour s'afficher au dessus des éléments en position relative */
+    white-space: nowrap;  /* on interdit le retour à la ligne */
+    
+  }
