@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coach tactick</title>
+    <link href="../club2foot/css/style.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="../club2foot/css/style.css" id="change-style">
+</head>
+
+
+<body class="tourne">
+<header>
+
+    <nav>
+        <ul>
+          <li><button onclick="swap('css/reset.css'); videVar();" id="tagcoach" >
+            RESET
+         </button></li>
+            <li><button onclick="swap('css/terrain.css'); videVar();" id="tagcoach" >
+              <img src="../club2foot/images/logoCalepin.svg" height ="40" width="40" />
+          </button></li>
+
+           
+          <li class="deroulant"><a href="#" id="tagequipeDOM" >Domicile &ensp;</a>
+            <ul class="sous">
+              <li onclick="RetienFormation('4-3-3');  VSFormation2();"><a href="#">4-3-3</a></li>
+              <li  onclick="RetienFormation('4-4-2'); VSFormation2();"><a href="#">4-4-2</a></li>
+              <li  onclick="RetienFormation('5-3-2'); VSFormation2();"><a href="#">5-3-2</a></li>
+            
+            </ul>
+          </li>
+
+          <li class="deroulant"><a href="#" id="tagequipeEXT">Exterieur &ensp;</a>
+            <ul class="sous">
+              <li onclick="RetienFormation2('4-3-3'); VSFormation();"><a href="#">4-3-3</a></li>
+              <li onclick="RetienFormation2('4-4-2'); VSFormation();"><a href="#">4-4-2</a></li>
+              <li onclick="RetienFormation2('5-3-2'); VSFormation();"><a href="#">5-3-2</a></li>
+         
+            </ul>
+          </li>
+
+          <li class="deroulant"><a href="#" id="actions">Actions &ensp;</a>
+            <ul class="sous">
+                <li onclick="swap('css/peno.css')"><a href="#">Penalty</a></li>
+                <li onclick="swap('css/corner.css')"><a href="#">Corner</a></li>
+                <li onclick="swap('css/coupF.css')"><a href="#">Coup francs</a></li>
+         
+            </ul>
+          </li>
+
+         
+           
+        </ul>
+        
+      </nav>
+    
+
+
+</header>
+
+<div class="containerTerrain ">
+
+  <!-- div terrain-->
+    <div id="ligneBUTgau"  class="elementMobile ligBUT1"></div>
+    <div id="ligneBUTdroi" class="elementMobile ligBUT2"></div>
+    <div id="ligneTouchHaut"  class="elementMobile ligneTouchHaut"></div>
+    <div id="ligneTouchBas" class="elementMobile ligneTouchBas"></div>
+
+    <div id="ligneHautBut" class="elementMobile ligneHautBut"></div>
+    <div id="ligneHautBut2" class="elementMobile ligneHautBut2"></div>
+    
+    <div id="ligneBasBut" class="elementMobile ligneBasBut"></div>
+    <div id="ligneBasBut2" class="elementMobile ligneBasBut2"></div>
+
+    <div id="ligne6m" class="elementMobile ligne6m"></div>
+    <div id="ligne6m2" class="elementMobile ligne6m2"></div>
+
+    <div id="RondCentral" class="elementMobile RondCentral"></div>
+
+    <div id="medianetop" class="elementMobile medianetop"></div>
+    <div id="medianebot" class="elementMobile medianebot"></div>
+
+    <div id="corner1" class="elementMobile corner1"></div>
+    <div id="corner2" class="elementMobile corner2"></div>
+    <div id="corner3" class="elementMobile corner3"></div>
+    <div id="corner4" class="elementMobile corner4"></div>
+
+    <div id="point1" class="elementMobile point1"></div>
+    <div id="point2" class="elementMobile point2"></div>
+    <div id="point3" class="elementMobile point3"></div>
+
+     <!-- div équipe domicile-->
+     <div id="joueur1Dom" class="elementMobile joueur1Dom infobulle" aria-label="Pierre"></div>
+     <div id="joueur2Dom" class="elementMobile joueur2Dom infobulle" aria-label="Paul"></div>
+     <div id="joueur3Dom" class="elementMobile joueur3Dom infobulle" aria-label="Jacques"></div>
+     <div id="joueur4Dom" class="elementMobile joueur4Dom infobulle" aria-label="Alain"></div>
+     <div id="joueur5Dom" class="elementMobile joueur5Dom infobulle" aria-label="Franck"></div>
+     <div id="joueur6Dom" class="elementMobile joueur6Dom infobulle" aria-label="Bob"></div>
+     <div id="joueur7Dom" class="elementMobile joueur7Dom infobulle" aria-label="Marcel"></div>
+     <div id="joueur8Dom" class="elementMobile joueur8Dom infobulle" aria-label="Jean"></div>
+     <div id="joueur9Dom" class="elementMobile joueur9Dom infobulle" aria-label="Philippe"></div>
+     <div id="joueur10Dom" class="elementMobile joueur10Dom infobulle" aria-label="Peter"></div>
+     <div id="joueur11Dom" class="elementMobile joueur11Dom infobulle" aria-label="Robert"></div>
+
+    <!-- div équipe ext-->
+    <div id="joueur1Ext" class="elementMobile joueur1Ext"></div>
+    <div id="joueur2Ext" class="elementMobile joueur2Ext"></div>
+    <div id="joueur3Ext" class="elementMobile joueur3Ext"></div>
+    <div id="joueur4Ext" class="elementMobile joueur4Ext"></div>
+    <div id="joueur5Ext" class="elementMobile joueur5Ext"></div>
+    <div id="joueur6Ext" class="elementMobile joueur6Ext"></div>
+    <div id="joueur7Ext" class="elementMobile joueur7Ext"></div>
+    <div id="joueur8Ext" class="elementMobile joueur8Ext"></div>
+    <div id="joueur9Ext" class="elementMobile joueur9Ext"></div>
+    <div id="joueur10Ext" class="elementMobile joueur10Ext"></div>
+    <div id="joueur11Ext" class="elementMobile joueur11Ext"></div>
+
+
+    
+    <!-- div Arbitre-->
+    <div id="arbitreTouch1" class="elementMobile arbitreTouch1"></div>
+    <div id="arbitreTouch2" class="elementMobile arbitreTouch2"></div>
+    <div id="arbitreCentre" class="elementMobile arbitreCentre"></div>
+    <div id="balonfixe" class="elementMobile balonfixe"></div>
+
+     <!-- div Cornercoin-->
+     <div onclick="cornerBDsenar()" id="cornerBD" class="elementMobile cornerBD"></div>
+     <div onclick="cornerBGsenar()" id="cornerBG" class="elementMobile cornerBG"></div>
+     <div onclick="cornerHDsenar()" id="cornerHD" class="elementMobile cornerHD"></div>
+     <div onclick="cornerHGsenar()" id="cornerHG" class="elementMobile cornerHG"></div>
+
+      <!-- div ballonpeno-->
+      <div  onclick="swap('css/penoG.css')" id="penoG" class="elementMobile penoG"></div>
+      <div  onclick="swap('css/penoD.css')" id="penoD" class="elementMobile penoD"></div>
+
+       <!-- div coup franc-->
+       <div  onclick="swap('css/coupFHD.css')"  id="CFHD" class="elementMobile CFHD"></div>
+       <div   onclick="swap('css/coupFHG.css')"  id="CFHG" class="elementMobile CFHG"></div>
+       <div  onclick="swap('css/coupFBD.css')"   id="CFBD" class="elementMobile CFBD"></div>
+       <div   onclick="swap('css/coupFBG.css')"  id="CFBG" class="elementMobile CFBG"></div>
+
+  <!-- div POUR TEST -->
+  <div id="test"></div>
+
+</div>
+
+
+
+<script src="../club2foot/js/main.js"></script>
+</body>
+
+
+
+</html>
