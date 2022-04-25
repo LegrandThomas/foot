@@ -297,6 +297,7 @@ body {
     transition: transform 1s cubic-bezier(0.45, -1.12, 0.35, 1.78);
     border-radius: 50%;
     z-index: 50000;
+    position: absolute;
   }
   
   #joueur2Dom{
@@ -611,6 +612,7 @@ body {
     transition: transform 1s cubic-bezier(0.45, -1.12, 0.35, 1.78);
     border-radius: 50%;
    display: block;
+   position: absolute;
   }
   .infobulle {
       

@@ -146,6 +146,40 @@
 
 </div>
 
+<script type="text/javascript">
+  var balonfixe = document.getElementById('balonfixe'),
+      s = balonfixe.style, 
+      i = balonfixe.offsetLeft, 
+      j = balonfixe.offsetTop;
+  document.onkeydown = function(event){
+      var event = event || window.event,
+          keyCode = event.keyCode;
+       
+
+      switch(keyCode){
+      case 38:
+          j--;
+          break;
+      case 40:
+          j++;
+          break;
+      case 37:
+          i--;
+          break;
+      case 39:
+          i++;
+          break;
+      }
+     
+      s.left = String(i)+'px';
+      s.top = String(j)+'px';
+  }
+
+</script>
+
+
+
+
 
 
 <script src="../club2foot/js/main.js"></script>

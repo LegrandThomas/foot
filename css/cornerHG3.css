@@ -558,7 +558,7 @@ body {
         transition: transform 1s cubic-bezier(0.45, -1.12, 0.35, 1.78);
         border-radius: 50%;
         display:none;
-    
+        position: absolute;
       }
       
       #cornerBG{
@@ -569,7 +569,7 @@ body {
         transition: transform 1s cubic-bezier(0.45, -1.12, 0.35, 1.78);
         border-radius: 50%;
         display:none;
-    
+        position: absolute;
       }
       
       #cornerHD{
@@ -580,7 +580,7 @@ body {
         transition: transform 1s cubic-bezier(0.45, -1.12, 0.35, 1.78);
         border-radius: 50%;
         display:none;
-    
+        position: absolute;
       }
       
       #cornerHG{
@@ -591,7 +591,7 @@ body {
         transition: transform 1s cubic-bezier(0.45, -1.12, 0.35, 1.78);
         border-radius: 50%;
         display:block;
-    
+        position: absolute;
       }
 
       .infobulle {

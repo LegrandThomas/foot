@@ -263,8 +263,6 @@ function coupFBDsenar(){
     let test="";
    
     test=tabAction[coupftirage];
-    console.log(JSON.parse(JSON.stringify(test)));
-    
     switch (test) {
     
     case 'coupFBD':
@@ -284,9 +282,8 @@ function coupFBDsenar(){
                                   
     }
 }
-
-
 /*
+
 function senarDetermine(min,max){
 i=min+compteur;
 a=max;
