@@ -4,9 +4,11 @@ let formationDom="";
 let formationExt="";
 let cornertirage=0;
 let coupftirage=0;
+let coupftirage2=3;
+let coupftirage3=6;
+let coupftirage4=9;
 
-
-const tabAction=['coupFBD','coupFBD2', 'coupFBD3','coupFHD.css','coupFHD2.css','coupFHD3.css','coupFHG.css','acoupFHG2.css','coupFHG3.css','coupFBG.css','coupFBG2.css','acoupFBG3.css'];
+const tabAction=['coupFBD','coupFBD2', 'coupFBD3','coupFHD','coupFHD2','coupFHD3','coupFHG','coupFHG2','coupFHG3','coupFBG','coupFBG2','coupFBG3'];
 
 var i=0;
 var a=0;
@@ -278,6 +280,80 @@ function coupFBDsenar(){
     case 'coupFBD3':
     swap('css/coupFBD3.css');
     coupftirage=0;
+    break;                     
+                                  
+    }
+}
+
+
+function coupFHDsenar(){
+    let test="";
+    test=tabAction[coupftirage2];
+    console.log(test);
+    switch (test) {
+    
+    case 'coupFHD':
+    swap('css/coupFHD.css');
+    coupftirage2=coupftirage2+1;
+    break;
+                                  
+    case 'coupFHD2':
+    swap('css/coupFHD2.css');
+    coupftirage2=coupftirage2+1;
+    break;
+                              
+    case 'coupFHD3':
+    swap('css/coupFHD3.css');
+    coupftirage2=3;
+    break;                     
+                                  
+    }
+}
+
+
+function coupFHGsenar(){
+    let test="";
+    test=tabAction[coupftirage3];
+    console.log(test);
+    switch (test) {
+    
+    case 'coupFHG':
+    swap('css/coupFHG.css');
+    coupftirage3=coupftirage3+1;
+    break;
+                                  
+    case 'coupFHG2':
+    swap('css/coupFHG2.css');
+    coupftirage3=coupftirage3+1;
+    break;
+                              
+    case 'coupFHG3':
+    swap('css/coupFHG3.css');
+    coupftirage3=6;
+    break;                     
+                                  
+    }
+}
+
+function coupFBGsenar(){
+    let test="";
+    test=tabAction[coupftirage4];
+    console.log(test);
+    switch (test) {
+    
+    case 'coupFBG':
+    swap('css/coupFBG.css');
+    coupftirage4=coupftirage4+1;
+    break;
+                                  
+    case 'coupFBG2':
+    swap('css/coupFBG2.css');
+    coupftirage4=coupftirage4+1;
+    break;
+                              
+    case 'coupFBG3':
+    swap('css/coupFBG3.css');
+    coupftirage4=9;
     break;                     
                                   
     }
